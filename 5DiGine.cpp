@@ -21,3 +21,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
+
+#include "5DiGine.hpp"
+
+namespace fiveDiGine_Window {
+    void fiveDiGine::run() {
+        while (!Window_Screen.shouldClose ()) {
+            glfwPollEvents ();
+        }
+    }
+}

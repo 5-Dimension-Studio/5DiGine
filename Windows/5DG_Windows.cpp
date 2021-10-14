@@ -21,3 +21,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
+
+#include <5DG_Window.hpp>
+
+namespace fiveDiGine_Window {
+    Window_Screen (int w, int h, std::string name) : width {w}, height {h}, windowName {name} {
+        initWindow ();
+    }; //Calling and initiate window
+
+    fiveDiGine_Window_Screen::~Window_Screen() {
+        glfwDestroyWindow (window);
+        glfwTerminate ();
+    }
+
+    void fiveDiGine_Window::initWindow () {
+        glfwInit (); //initiate glfw
+        glfwWindowHint (GLFW_CLIENT_API, GLFW_NO_API); //chech glfw api exist or not
+        GLFWWINDOWHINT (GLFW_RESIZABLE, GLFW_FALSE); //disable window resizing
+
+        window = glfwCreateWindow (width, height, windowName.c_str (), nullptr, nullptr); //activating window
+    };
+}

@@ -21,3 +21,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
+
+#include "5DiGine.hpp"
+#include <cstdlib>
+#include <iostream>
+#include <stdexcept>
+
+int main () {
+    fiveDiGine_Window::fiveDiGine app{};
+    try {
+        app.run();
+    } catch (const std::exception &e) {
+        std::cerr << e.what() << std::endl;
+        return EXIT_FAILURE;
+    }
+
+    return EXIT_SUCCESS;
+
+}

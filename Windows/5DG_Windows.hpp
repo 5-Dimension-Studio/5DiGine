@@ -21,3 +21,35 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
+
+#pragma once
+
+//Defining the needed library
+#define GLFW_INCLUDE_VULKAN
+
+//Using GLFW as temporary library, will be change in next version of 5DiGine
+#include <GLFW/glfw3.h>
+#include <string>
+
+namespace fiveDiGine_Window {
+	class Window_Screen {
+		
+		public:
+			Window_Screen(int w, int h, std::string name);
+			~Window_Screen();
+
+			Window_Screen (const Window_Screen &) =delete;
+
+			bool shouldClose () {
+				return glfwWindowShouldClose(window);
+			}
+
+		private:
+			void initWindow();
+
+			const int width, height;
+
+			std::string windowName;
+			GLFWwindow *window;
+	};
+}

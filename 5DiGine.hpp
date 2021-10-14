@@ -21,3 +21,19 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
+
+#pragma once
+
+//Calling our window
+#include "Windows/5DG_Windows.hpp"
+
+namespace fiveDiGine_Window {
+    class fiveDiGine {
+        public:
+            static constexpr int WIDTH = 1300, HEIGHT = 700;
+            void run ();
+
+        private:
+            Window_Screen Window_Screen {WIDTH, HEIGHT, "5DiGine"};
+    };
+}
