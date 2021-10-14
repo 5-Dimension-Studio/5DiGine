@@ -24,21 +24,22 @@ SOFTWARE.
 
 #include <5DG_Window.hpp>
 
-namespace fiveDiGine_Window {
-    Window_Screen (int w, int h, std::string name) : width {w}, height {h}, windowName {name} {
-        initWindow ();
-    }; //Calling and initiate window
+    namespace fiveDiGine_Window {
+        Window_Screen::Window_Screen (int w, int h, std::string name) : width {w}, height {h}, windowName {name} {
+            initWindow ();
+        }; //Calling and initiate window
 
-    fiveDiGine_Window_Screen::~Window_Screen() {
-        glfwDestroyWindow (window);
-        glfwTerminate ();
+        Window_Screen::~Window_Screen () {
+            glfwDestroyWindow (window);
+            glfwTerminate ();
+        }
+
+        void Window_Screen::initWindow ()
+        {
+            glfwInit ();
+            glfwWindowHint (GLFW_CLIENT_API, GLFW_NO_API);
+            glfwWindowHint (GLFW_RESIZABLE, GLFW_FALSE);
+
+            window = glfwCreateWindow (width, height, windowName.c_str (), nullptr, nullptr);
+        }
     }
-
-    void fiveDiGine_Window::initWindow () {
-        glfwInit (); //initiate glfw
-        glfwWindowHint (GLFW_CLIENT_API, GLFW_NO_API); //chech glfw api exist or not
-        GLFWWINDOWHINT (GLFW_RESIZABLE, GLFW_FALSE); //disable window resizing
-
-        window = glfwCreateWindow (width, height, windowName.c_str (), nullptr, nullptr); //activating window
-    };
-}
