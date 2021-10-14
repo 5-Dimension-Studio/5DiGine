@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-- [  ] What kind bugs/error you find when using our engine?
+- [  ] kind bugs/error you find when using our engine?
  - [  ] How we can reproduce it?
  - [  ] What kind output you expecting from our engine?
 
