@@ -7,6 +7,6 @@
 	remote = git@github.com:hafizdkren/5DiGine_Window.git
 	branch = main
 	commit = 5f6b443b2944b6e8f1226e0203b46c336387bf9b
-	parent = 462d9b0fb849be50c4d5aab8fa558c3490812c10
+	parent = b2a14c7cab361c6db9c8f06561b71dcdfdd98ae2
 	method = merge
 	cmdver = 0.4.3
