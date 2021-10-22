@@ -1,0 +1,12 @@
+[submodule "5DiGine_Window"]
+	path = 5DiGine_Window
+	url = git@github.com:hafizdkren/5DiGine_Window.git
+[submodule "5DiGine_Render"]
+	path = 5DiGine_Render
+	url = git@github.com:hafizdkren/5DiGine_Render.git
+[submodule "5DiGine_include"]
+	path = 5DiGine_include
+	url = git@github.com:hafizdkren/5DiGine_include.git
+[submodule "5DiGine_Compiler"]
+	path = 5DiGine_Compiler
+	url = git@github.com:hafizdkren/5DiGine_Compiler.git
