@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:hafizdkren/5DiGine_include.git
+	branch = main
+	commit = 963284c0b00e69ac1fb9cbd9064fd7515d611b5f
+	parent = 081c72d47c9984d7e2fbf7014cd12574f627b411
+	method = merge
+	cmdver = 0.4.3
