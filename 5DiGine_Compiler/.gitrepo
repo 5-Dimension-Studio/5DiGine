@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:hafizdkren/5DiGine_Compiler.git
+	branch = main
+	commit = 3bf0d9fe6b540824966e1f2a178dbb859d2a9ed2
+	parent = 4b8c9a304b07211d3d4ba774790f5ec420b908e0
+	method = merge
+	cmdver = 0.4.3
